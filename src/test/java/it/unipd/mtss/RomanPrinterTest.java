@@ -6,7 +6,7 @@ package it.unipd.mtss;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
-// Implementare test
+// Implementare
 public class RomanPrinterTest 
 {
     @Test
