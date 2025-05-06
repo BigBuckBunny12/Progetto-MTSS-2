@@ -11,9 +11,6 @@ import org.junit.Test;
  */
 public class RomanPrinterTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
     public void shouldAnswerWithTrue()
     {
