@@ -6,7 +6,7 @@ package it.unipd.mtss;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-// Implementare test
+// Implementare test (JUnit 5)
 public class IntegerToRomanTest 
 {
     @Test
