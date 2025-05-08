@@ -26,4 +26,22 @@ public class IntegerToRomanTest {
         String result = IntegerToRoman.convert(3);
         assertEquals("III", result);
     }
+
+    @Test
+    public void shouldConvertThreeToIV() {
+        String result = IntegerToRoman.convert(4);
+        assertEquals("IV", result);
+    }
+
+    @Test
+    public void shouldConvertThreeToV() {
+        String result = IntegerToRoman.convert(5);
+        assertEquals("V", result);
+    }
+
+    @Test
+    public void shouldConvertThreeToVI() {
+        String result = IntegerToRoman.convert(6);
+        assertEquals("VI", result);
+    }
 }
