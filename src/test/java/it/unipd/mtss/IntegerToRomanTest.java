@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class IntegerToRomanTest {
-
+    //Test da 1 a 6
     @Test
     public void shouldConvertOneToI() {
         String result = IntegerToRoman.convert(1);
