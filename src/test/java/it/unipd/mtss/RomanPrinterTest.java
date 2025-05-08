@@ -46,4 +46,43 @@ public class RomanPrinterTest {
         String result = RomanPrinter.print(3);
         assertEquals(expected, result);
     }
+
+    @Test
+    public void shouldPrintFour() {
+        String expected =
+            " _____  __      __\n" +
+            "|_   _| \\ \\    / /\n" +
+            "  | |    \\ \\  / / \n" +
+            "  | |     \\ \\/ /  \n" +
+            " _| |_     \\  /   \n" +
+            "|_____|     \\/    \n";
+        String result = RomanPrinter.print(4);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void shouldPrintFive() {
+        String expected =
+            "__      __\n" +
+            "\\ \\    / /\n" +
+            " \\ \\  / / \n" +
+            "  \\ \\/ /  \n" +
+            "   \\  /   \n" +
+            "    \\/    \n";
+        String result = RomanPrinter.print(5);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void shouldPrintSix() {
+        String expected =
+            "__      __  _____ \n" +
+            "\\ \\    / / |_   _|\n" +
+            " \\ \\  / /    | |  \n" +
+            "  \\ \\/ /     | |  \n" +
+            "   \\  /     _| |_ \n" +
+            "    \\/     |_____|\n";
+        String result = RomanPrinter.print(6);
+        assertEquals(expected, result);
+    }
 }
