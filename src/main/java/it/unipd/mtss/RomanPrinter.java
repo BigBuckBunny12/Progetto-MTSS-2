@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RomanPrinter {
-
+    // Supporta i numeri fino a 20
     public static String print(int num) {
         return printAsciiArt(IntegerToRoman.convert(num));
     }
