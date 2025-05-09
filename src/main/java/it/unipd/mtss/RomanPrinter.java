@@ -32,6 +32,14 @@ public class RomanPrinter {
             "   \\  /   ",
             "    \\/    "
         });
+        asciiRomanMap.put('X', new String[]{
+            "__   __",
+            "\\ \\ / /",
+            " \\ V / ",
+            "  > <  ",
+            " / . \\ ",
+            "/_/ \\_\\"
+        });
     }
 
     public static String printAsciiArt(String roman) {
