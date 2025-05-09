@@ -7,7 +7,6 @@ package it.unipd.mtss;
 public class IntegerToRoman {
   public static String convert(int number) {
 
-    // Definizione delle lettere romane
     String[] romanLetters = {"X", "IX", "V", "IV", "I"};
     int[] values = {10, 9, 5, 4, 1};
 
