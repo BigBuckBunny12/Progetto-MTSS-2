@@ -68,4 +68,29 @@ public class IntegerToRomanTest {
         String result = IntegerToRoman.convert(10);
         assertEquals("X", result);
     }
+
+    //Test da 11 a 20 (parziali) 11 14 19 20
+    @Test
+    public void shouldConvertElevenToXI() {
+        String result = IntegerToRoman.convert(11);
+        assertEquals("XI", result);
+    }
+
+    @Test
+    public void shouldConvertFourteenToXIV() {
+        String result = IntegerToRoman.convert(14);
+        assertEquals("XIV", result);
+    }
+
+    @Test
+    public void shouldConvertNineteenToXIX() {
+        String result = IntegerToRoman.convert(19);
+        assertEquals("XIX", result);
+    }
+
+    @Test
+    public void shouldConvertTwentyToXX() {
+        String result = IntegerToRoman.convert(20);
+        assertEquals("XX", result);
+    }
 }
