@@ -37,6 +37,15 @@ public class RomanPrinter {
             " / . \\ \n" +
             "/_/ \\_\\\n"
         );
+
+        asciiRomanMap.put('L',
+            "  _      \n" +
+            " | |     \n" +
+            " | |     \n" +
+            " | |     \n" +
+            " | |____ \n" +
+            " |______|\n"
+        );
     }
 
     public static String printAsciiArt(String roman) {
