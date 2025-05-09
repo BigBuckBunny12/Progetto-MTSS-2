@@ -85,4 +85,56 @@ public class RomanPrinterTest {
         String result = RomanPrinter.print(6);
         assertEquals(expected, result);
     }
+
+    @Test
+    public void shouldPrintSeven() {
+        String expected =
+            "__      __  _____   _____ \n" +
+            "\\ \\    / / |_   _| |_   _|\n" +
+            " \\ \\  / /    | |     | |  \n" +
+            "  \\ \\/ /     | |     | |  \n" +
+            "   \\  /     _| |_   _| |_ \n" +
+            "    \\/     |_____| |_____|\n";
+        String result = RomanPrinter.print(7);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void shouldPrintEight() {
+        String expected =
+            "__      __  _____   _____   _____ \n" +
+            "\\ \\    / / |_   _| |_   _| |_   _|\n" +
+            " \\ \\  / /    | |     | |     | |  \n" +
+            "  \\ \\/ /     | |     | |     | |  \n" +
+            "   \\  /     _| |_   _| |_   _| |_ \n" +
+            "    \\/     |_____| |_____| |_____|\n";
+        String result = RomanPrinter.print(8);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void shouldPrintNine() {
+        String expected =
+            " _____  __   __\n" +
+            "|_   _| \\ \\ / /\n" +
+            "  | |    \\ V / \n" +
+            "  | |     > <  \n" +
+            " _| |_   / . \\ \n" +
+            "|_____| /_/ \\_\\\n";
+        String result = RomanPrinter.print(9);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void shouldPrintTen() {
+        String expected =
+            "__   __\n" +
+            "\\ \\ / /\n" +
+            " \\ V / \n" +
+            "  > <  \n" +
+            " / . \\ \n" +
+            "/_/ \\_\\\n";
+        String result = RomanPrinter.print(10);
+        assertEquals(expected, result);
+    }
 }
