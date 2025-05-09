@@ -93,4 +93,35 @@ public class IntegerToRomanTest {
         String result = IntegerToRoman.convert(20);
         assertEquals("XX", result);
     }
+
+    //Test da 11 a 20 (parziali) 30 34 39 40 50
+    @Test
+    public void shouldConvertThirtyToXXX() {
+        String result = IntegerToRoman.convert(30);
+        assertEquals("XXX", result);
+    }
+
+    @Test
+    public void shouldConvertThirtyFourToXXXIV() {
+        String result = IntegerToRoman.convert(34);
+        assertEquals("XXXIV", result);
+    }
+
+    @Test
+    public void shouldConvertThirtyNineToXXXIX() {
+        String result = IntegerToRoman.convert(39);
+        assertEquals("XXXIX", result);
+    }
+
+    @Test
+    public void shouldConvertFortyToXL() {
+        String result = IntegerToRoman.convert(40);
+        assertEquals("XL", result);
+    }
+
+    @Test
+    public void shouldConvertFiftyToL() {
+        String result = IntegerToRoman.convert(50);
+        assertEquals("L", result);
+    }
 }
