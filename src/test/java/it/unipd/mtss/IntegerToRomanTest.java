@@ -94,7 +94,7 @@ public class IntegerToRomanTest {
         assertEquals("XX", result);
     }
 
-    //Test da 30 a 50 (parziali) 30 34 39 40 50
+    //Test da 21 a 50 (parziali) 30 34 39 40 50
     @Test
     public void shouldConvertThirtyToXXX() {
         String result = IntegerToRoman.convert(30);
@@ -166,5 +166,84 @@ public class IntegerToRomanTest {
     public void shouldConvertOneHundredToC() {
         String result = IntegerToRoman.convert(100);
         assertEquals("C", result);
+    }
+
+    //Test da 101 a 500 (parziali)
+    @Test
+    public void shouldConvertOneHundredOneToCI() {
+        String result = IntegerToRoman.convert(101);
+        assertEquals("CI", result);
+    }
+
+    @Test
+    public void shouldConvertOneHundredTwentyThreeToCXXIII() {
+        String result = IntegerToRoman.convert(123);
+        assertEquals("CXXIII", result);
+    }
+
+    @Test
+    public void shouldConvertOneHundredNinetyNineToCXCIX() {
+        String result = IntegerToRoman.convert(199);
+        assertEquals("CXCIX", result);
+    }
+
+    @Test
+    public void shouldConvertTwoHundredToCC() {
+        String result = IntegerToRoman.convert(200);
+        assertEquals("CC", result);
+    }
+
+    @Test
+    public void shouldConvertTwoHundredFiftyFiveToCCLV() {
+        String result = IntegerToRoman.convert(255);
+        assertEquals("CCLV", result);
+    }
+
+    @Test
+    public void shouldConvertTwoHundredNinetyToCCXC() {
+        String result = IntegerToRoman.convert(290);
+        assertEquals("CCXC", result);
+    }
+
+    @Test
+    public void shouldConvertThreeHundredToCCC() {
+        String result = IntegerToRoman.convert(300);
+        assertEquals("CCC", result);
+    }
+
+    @Test
+    public void shouldConvertThreeHundredThirtyThreeToCCCXXXIII() {
+        String result = IntegerToRoman.convert(333);
+        assertEquals("CCCXXXIII", result);
+    }
+
+    @Test
+    public void shouldConvertThreeHundredNinetyNineToCCCXCIX() {
+        String result = IntegerToRoman.convert(399);
+        assertEquals("CCCXCIX", result);
+    }
+
+    @Test
+    public void shouldConvertFourHundredToCD() {
+        String result = IntegerToRoman.convert(400);
+        assertEquals("CD", result);
+    }
+
+    @Test
+    public void shouldConvertFourHundredFortyFourToCDXLIV() {
+        String result = IntegerToRoman.convert(444);
+        assertEquals("CDXLIV", result);
+    }
+
+    @Test
+    public void shouldConvertFourHundredNinetyNineToCDXCIX() {
+        String result = IntegerToRoman.convert(499);
+        assertEquals("CDXCIX", result);
+    }
+
+    @Test
+    public void shouldConvertFiveHundredToD() {
+        String result = IntegerToRoman.convert(500);
+        assertEquals("D", result);
     }
 }
