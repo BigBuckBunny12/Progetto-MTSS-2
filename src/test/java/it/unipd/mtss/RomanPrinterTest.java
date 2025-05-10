@@ -193,7 +193,7 @@ public class RomanPrinterTest {
     @Test
     public void shouldPrintThirty() {
         String expected =
-            "__   __  __   __  __   __\n" +
+            "__   __ __   __ __   __\n" +
             "\\ \\ / / \\ \\ / / \\ \\ / /\n" +
             " \\ V /   \\ V /   \\ V / \n" +
             "  > <     > <     > <  \n" +
@@ -219,13 +219,52 @@ public class RomanPrinterTest {
     @Test
     public void shouldPrintFifty() {
         String expected =
-            "  _      \n" +
-            " | |     \n" +
-            " | |     \n" +
-            " | |     \n" +
-            " | |____ \n" +
-            " |______|\n";
+            " _      \n" +
+            "| |     \n" +
+            "| |     \n" +
+            "| |     \n" +
+            "| |____ \n" +
+            "|______|\n";
         String result = RomanPrinter.print(50);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void shouldPrintEighty() {
+        String expected =
+            " _       __   __ __   __ __   __\n" +
+            "| |      \\ \\ / / \\ \\ / / \\ \\ / /\n" +
+            "| |       \\ V /   \\ V /   \\ V / \n" +
+            "| |        > <     > <     > <  \n" +
+            "| |____   / . \\   / . \\   / . \\ \n" +
+            "|______| /_/ \\_\\ /_/ \\_\\ /_/ \\_\\\n";
+        String result = RomanPrinter.print(80);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void shouldPrintNinety() {
+        String expected =
+            "__   __    _____ \n" +
+            "\\ \\ / /  / ____|\n" +
+            " \\ V /  | |     \n" +
+            "  > <   | |     \n" +
+            " / . \\  | |____ \n" +
+            "/_/ \\_\\  \\_____|\n";
+        String result = RomanPrinter.print(90);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void shouldPrintOneHundred() {
+        String expected =
+            "  _____ \n" +
+            " / ____|\n" +
+            "| |     \n" +
+            "| |     \n" +
+            "| |____ \n" +
+            " \\_____|\n";
+        String result = RomanPrinter.print(100);
         assertEquals(expected, result);
     }
 }
