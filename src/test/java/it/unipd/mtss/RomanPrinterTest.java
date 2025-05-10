@@ -206,12 +206,12 @@ public class RomanPrinterTest {
     @Test
     public void shouldPrintForty() {
         String expected =
-            "__   __   _      \n" +
-            "\\ \\ / /  | |     \n" +
-            " \\ V /   | |     \n" +
-            "  > <    | |     \n" +
-            " / . \\   | |____ \n" +
-            "/_/ \\_\\  |______|\n";
+            "__   __  _      \n" +
+            "\\ \\ / / | |     \n" +
+            " \\ V /  | |     \n" +
+            "  > <   | |     \n" +
+            " / . \\  | |____ \n" +
+            "/_/ \\_\\ |______|\n";
         String result = RomanPrinter.print(40);
         assertEquals(expected, result);
     }
@@ -245,7 +245,7 @@ public class RomanPrinterTest {
     @Test
     public void shouldPrintNinety() {
         String expected =
-            "__   __    _____ \n" +
+            "__   __   _____ \n" +
             "\\ \\ / /  / ____|\n" +
             " \\ V /  | |     \n" +
             "  > <   | |     \n" +
