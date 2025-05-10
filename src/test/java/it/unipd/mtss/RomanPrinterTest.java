@@ -267,4 +267,108 @@ public class RomanPrinterTest {
         String result = RomanPrinter.print(100);
         assertEquals(expected, result);
     }
+
+        @Test
+    public void shouldPrintOneHundredOne() {
+        String expected =
+            "  _____   _____ \n" +
+            " / ____| |_   _|\n" +
+            "| |        | |  \n" +
+            "| |        | |  \n" +
+            "| |____   _| |_ \n" +
+            " \\_____| |_____|\n";
+        String result = RomanPrinter.print(101);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void shouldPrintOneHundredFifty() {
+        String expected =
+            "  _____   _      \n" +
+            " / ____| | |     \n" +
+            "| |      | |     \n" +
+            "| |      | |     \n" +
+            "| |____  | |____ \n" +
+            " \\_____| |______|\n";
+        String result = RomanPrinter.print(150);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void shouldPrintTwoHundred() {
+        String expected =
+            "  _____   _____ \n" +
+            " / ____| / ____|\n" +
+            "| |     | |     \n" +
+            "| |     | |     \n" +
+            "| |____ | |____ \n" +
+            " \\_____| \\_____|\n";
+        String result = RomanPrinter.print(200);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void shouldPrintTwoHundredFifty() {
+        String expected =
+            "  _____   _____  _      \n" +
+            " / ____| / ____| | |     \n" +
+            "| |     | |     | |     \n" +
+            "| |     | |     | |     \n" +
+            "| |____ | |____ | |____ \n" +
+            " \\_____| \\_____| |______|\n";
+        String result = RomanPrinter.print(250);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void shouldPrintThreeHundredThirtyThree() {
+        String expected =
+            "  _____   _____   _____  __   __ __   __ __   __\n" +
+            " / ____| / ____| / ____| \\ \\ / / \\ \\ / / \\ \\ / /\n" +
+            "| |     | |     | |       \\ V /   \\ V /   \\ V / \n" +
+            "| |     | |     | |        > <     > <     > <  \n" +
+            "| |____ | |____ | |____   / . \\   / . \\   / . \\ \n" +
+            " \\_____| \\_____| \\_____| /_/ \\_\\ /_/ \\_\\ /_/ \\_\\\n";
+        String result = RomanPrinter.print(333);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void shouldPrintFourHundred() {
+        String expected =
+            "  _____  _      \n" +
+            " / ____|| |     \n" +
+            "| |     | |     \n" +
+            "| |     | |     \n" +
+            "| |____ | |____ \n" +
+            " \\_____||______|\n";
+        String result = RomanPrinter.print(400);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void shouldPrintFourHundredFortyFour() {
+        String expected =
+            "  _____  _      __      __  _____  __      __\n" +
+            " / ____|| |     \\ \\    / / |_   _| \\ \\    / /\n" +
+            "| |     | |      \\ \\  / /    | |    \\ \\  / / \n" +
+            "| |     | |       \\ \\/ /     | |     \\ \\/ /  \n" +
+            "| |____ | |____    \\  /     _| |_     \\  /   \n" +
+            " \\_____||______|    \\/     |_____|     \\/    \n";
+        String result = RomanPrinter.print(444);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void shouldPrintFiveHundred() {
+        String expected =
+            " _____  \n" +
+            "|  __ \\ \n" +
+            "| |  | |\n" +
+            "| |  | |\n" +
+            "| |__| |\n" +
+            "|_____/\n";
+        String result = RomanPrinter.print(500);
+        assertEquals(expected, result);
+    }
 }
