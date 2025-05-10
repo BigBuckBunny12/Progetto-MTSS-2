@@ -9,7 +9,7 @@ public class RomanPrinter {
     }
 
     private static final Map<Character, String> asciiRomanMap = new HashMap<>();
-
+    
     static {
         asciiRomanMap.put('I',
             " _____ \n" +
@@ -39,21 +39,30 @@ public class RomanPrinter {
         );
 
         asciiRomanMap.put('L',
-            " _      \n" +
-            "| |     \n" +
-            "| |     \n" +
-            "| |     \n" +
-            "| |____ \n" +
-            "|______|\n"
+            "  _      \n" +
+            " | |     \n" +
+            " | |     \n" +
+            " | |     \n" +
+            " | |____ \n" +
+            " |______|\n"
         );
 
         asciiRomanMap.put('C',
-            "  _____ \n" +
-            " / ____|\n" +
-            "| |     \n" +
-            "| |     \n" +
-            "| |____ \n" +
-            " \\_____|\n"
+            "   _____ \n" +
+            "  / ____|\n" +
+            " | |     \n" +
+            " | |     \n" +
+            " | |____ \n" +
+            "  \\_____|\n"
+        );
+
+        asciiRomanMap.put('D',
+            "  _____  \n" +
+            " |  __ \\ \n" +
+            " | |  | |\n" +
+            " | |  | |\n" +
+            " | |__| |\n" +
+            " |_____/ \n"
         );
     }
 
