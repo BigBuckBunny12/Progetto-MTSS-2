@@ -246,4 +246,60 @@ public class IntegerToRomanTest {
         String result = IntegerToRoman.convert(500);
         assertEquals("D", result);
     }
+
+    //Test da 501 a 1000 (parziali)
+
+    @Test
+    public void shouldConvertFiveHundredOneToDI() {
+        String result = IntegerToRoman.convert(501);
+        assertEquals("DI", result);
+    }
+
+    @Test
+    public void shouldConvertFiveHundredFiftyFiveToDLV() {
+        String result = IntegerToRoman.convert(555);
+        assertEquals("DLV", result);
+    }
+
+    @Test
+    public void shouldConvertSixHundredSixtySixToDCLXVI() {
+        String result = IntegerToRoman.convert(666);
+        assertEquals("DCLXVI", result);
+    }
+
+    @Test
+    public void shouldConvertSevenHundredToDCC() {
+        String result = IntegerToRoman.convert(700);
+        assertEquals("DCC", result);
+    }
+
+    @Test
+    public void shouldConvertSevenHundredSeventySevenToDCCLXXVII() {
+        String result = IntegerToRoman.convert(777);
+        assertEquals("DCCLXXVII", result);
+    }
+
+    @Test
+    public void shouldConvertEightHundredEightyEightToDCCCLXXXVIII() {
+        String result = IntegerToRoman.convert(888);
+        assertEquals("DCCCLXXXVIII", result);
+    }
+
+    @Test
+    public void shouldConvertNineHundredToCM() {
+        String result = IntegerToRoman.convert(900);
+        assertEquals("CM", result);
+    }
+
+    @Test
+    public void shouldConvertNineHundredNinetyNineToCMXCIX() {
+        String result = IntegerToRoman.convert(999);
+        assertEquals("CMXCIX", result);
+    }
+
+    @Test
+    public void shouldConvertOneThousandToM() {
+        String result = IntegerToRoman.convert(1000);
+        assertEquals("M", result);
+    }
 }
