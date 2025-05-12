@@ -5,6 +5,9 @@ import java.util.Map;
 
 public class RomanPrinter {
     public static String print(int num) {
+        if (num < 1 || num > 1000) {
+            throw new IllegalArgumentException("L'input deve essere compreso tra 1 e 1000");
+        }
         return printAsciiArt(IntegerToRoman.convert(num));
     }
 
