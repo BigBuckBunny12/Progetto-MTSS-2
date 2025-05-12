@@ -5,6 +5,7 @@
 package it.unipd.mtss;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class RomanPrinterTest {
 
@@ -423,5 +424,20 @@ public class RomanPrinterTest {
             "|_|  |_|\n";
         String result = RomanPrinter.print(1000);
         assertEquals(expected, result);
+    }
+
+    //Test per input minori di 1 e maggiori di 1000
+    @Test
+    public void shouldThrowExceptionForNumberLessThan1() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            RomanPrinter.print(0);
+        });
+    }
+
+    @Test
+    public void shouldThrowExceptionForNumberGreaterThan1000() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            RomanPrinter.print(1001);
+        });
     }
 }
