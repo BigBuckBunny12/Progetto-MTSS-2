@@ -6,6 +6,7 @@ package it.unipd.mtss;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class IntegerToRomanTest {
     //Test da 1 a 10
@@ -301,5 +302,20 @@ public class IntegerToRomanTest {
     public void shouldConvertOneThousandToM() {
         String result = IntegerToRoman.convert(1000);
         assertEquals("M", result);
+    }
+
+    //Test per input minori di 1 e maggiori di 1000
+    @Test
+    public void shouldThrowExceptionForNumberLessThan1() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            IntegerToRoman.convert(0);
+        });
+    }
+
+    @Test
+    public void shouldThrowExceptionForNumberGreaterThan1000() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            IntegerToRoman.convert(1001);
+        });
     }
 }
